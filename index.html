@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>MediaCatcher Pro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0d0d0d;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1a1a1a;
+            padding: 40px;
+            text-align: center;
+        }
+        header img {
+            height: 100px;
+        }
+        h1 {
+            font-size: 36px;
+            margin: 10px 0;
+        }
+        p {
+            font-size: 18px;
+            color: #ccc;
+        }
+        .container {
+            padding: 40px;
+            text-align: center;
+        }
+        .screenshots img {
+            width: 220px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px #000;
+        }
+        .buttons a {
+            display: inline-block;
+            margin: 15px;
+            padding: 12px 24px;
+            font-size: 18px;
+            background-color: #e50914;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+
+  <link rel="manifest" href="manifest.json">
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("service-worker.js").then(function() {
+        console.log("Service Worker Registered");
+      });
+    }
+  </script>
+</head>
+<body>
+
+<header>
+    <img src="icon.png" alt="MediaCatcher Pro Logo">
+    <h1>MediaCatcher Pro</h1>
+    <p>Capture. Converta. Controle.</p>
+</header>
+
+<div class="container">
+    <h2>Funções do App</h2>
+    <p>Baixe vídeos, converta para áudio, organize sua biblioteca e compartilhe com facilidade.</p>
+
+    <div class="screenshots">
+        <img src="mockup.png" alt="Mockup do App">
+    </div>
+
+    <div class="buttons">
+        <a href="MediaCatcherPro.ipa">Baixar IPA</a>
+        <a href="Pacote_Completo_MediaCatcherPro.zip">Baixar Pacote Completo</a>
+    </div>
+</div>
+
+<footer>
+    © 2025 MediaCatcher Pro – Criado por Luiz com suporte profissional.
+</footer>
+
+</body>
+</html>
